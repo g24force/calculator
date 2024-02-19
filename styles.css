@@ -1,0 +1,44 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    max-width: 480px;
+}
+
+.display {
+    padding: 50px;
+    font-size: 36px;
+}
+
+.buttons {
+    display: flex;
+}
+
+button {
+    flex-basis: 33%;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.operators {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+}
+
+#btnAC {
+    flex-basis: 100%;
+}
+
+#btn0 {
+    flex-basis: 66%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: px;
+    row-gap: 4px;
+}
