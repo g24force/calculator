@@ -17,3 +17,36 @@ const multiply = function(a) {
     }
     return total;
 };
+
+const display = document.querySelector('#display');
+  
+let firstNumber;
+let operator;
+let secondNumber;
+
+function operate (operator, a, b) {
+    switch (operator) {
+        case "+":
+            return add(a, b);
+        case "-":
+            return subtract(a, b);
+            case "/":
+                return divide(a, b);
+        case "x":
+            return multiply(a, b);
+    }
+};
+
+let displayValue = 0;
+
+const numberButtons = document.querySelectorAll('button.numbers')
+
+for (let i = 0; i < numberButtons.length; i++) {
+    numberButtons[i].addEventListener('click', () => {
+        display.textContent = numberButtons[i].value;
+    })
+}
+
+/* function numbersToDisplay () {
+
+}; */
