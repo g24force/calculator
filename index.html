@@ -9,10 +9,10 @@
 </head>
 <body>
     <div class="calculator">
-        <div id ="display" class="display">157</div>
+        <div id ="display" class="display">0</div>
         <div class="buttons">
-            <div class="container">
-                <button id="btnAC" value="clear">AC</button>
+            <div class="container-number-buttons">
+                <button id="clear-button" value="clear" class="clear-button">AC</button>
                 <button id="btn7" value="7" class="numbers">7</button>
                 <button id="btn8" value="8" class="numbers">8</button>
                 <button id="btn9" value="9" class="numbers">9</button>
@@ -23,14 +23,14 @@
                 <button id="btn2" value="2" class="numbers">2</button>
                 <button id="btn3" value="3" class="numbers">3</button>
                 <button id="btn0" value="0" class="numbers">0</button>
-                <button id="btnComma" value=",">,</button>
+                <button id="btn-comma" value=".">,</button>
             </div>
-            <div class="operators">
-                <button>/</button>
-                <button>x</button>
-                <button>-</button>
-                <button>+</button>
-                <button>=</button>  
+            <div class="container-operators-buttons">
+                <button value="/" class="operators">/</button>
+                <button value="*" class="operators">x</button>
+                <button value="-" class="operators">-</button>
+                <button value="+" class="operators">+</button>
+                <button id="equal-button" value="=" class="equal-button">=</button>  
             </div>
         </div>    
     </div> 
