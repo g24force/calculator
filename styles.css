@@ -1,3 +1,9 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .calculator {
     display: flex;
     flex-direction: column;
@@ -22,13 +28,13 @@ button {
     font-size: 16px;
 }
 
-.operators {
+.container-operators-buttons {
     display: flex;
     flex-direction: column;
     flex-basis: 25%;
 }
 
-#btnAC {
+.clear-button {
     flex-basis: 100%;
 }
 
@@ -36,9 +42,8 @@ button {
     flex-basis: 66%;
 }
 
-.container {
+.container-number-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: px;
     row-gap: 4px;
 }
